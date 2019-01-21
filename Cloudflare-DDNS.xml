@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>CloudFlare-DDNS</Name>
+  <Repository>userhas404d/cloudflare-ddns</Repository>
+  <Registry>https://hub.docker.com/r/userhas404d/cloudflare-ddns</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Python script running as a cronjob in Docker to dynamically update Cloudflare DNS records.[br][br]&#xD;
+    [b][span style='color: #E80000;']Supports multiple subdomains[/span][/b][br]&#xD;
+  </Overview>
+  <Beta>False</Beta>
+  <Category>Network:DNS Network:Other</Category>
+  <Date>2019-01-20</Date> 
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/GC79OJP.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1548032373</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Python script running as a cronjob in Docker to update Cloudflare DNS records.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>CF_ZONE_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>CF_DNS_NAMES</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>CF_API_EMAIL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>CF_API_KEY</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="CF_ZONE_NAME" Target="CF_ZONE_NAME" Default="" Mode="" Description="Container Variable: CF_ZONE_NAME" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CF_DNS_NAMES" Target="CF_DNS_NAMES" Default="" Mode="" Description="Container Variable: CF_DNS_NAMES" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CF_API_EMAIL" Target="CF_API_EMAIL" Default="" Mode="" Description="Container Variable: CF_API_EMAIL" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CF_API_KEY" Target="CF_API_KEY" Default="" Mode="" Description="Container Variable: CF_API_KEY" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+</Container>
